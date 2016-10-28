@@ -9,4 +9,4 @@ Or `brew tap sutoiku/stoic-public` and then `sutoiku/stoic-public/<formula>`.
 ## How do I contribute ?
  - https://github.com/Homebrew/brew/blob/master/docs/How-to-Create-and-Maintain-a-Tap.md
  - https://github.com/Homebrew/homebrew-tex
- - http://formalfriday.club/2015/01/05/creating-your-own-homebrew-tap-and-formula.html
+ - https://github.com/Homebrew/brew/blob/master/docs/Formula-Cookbook.md
