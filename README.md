@@ -5,3 +5,7 @@ Homebrew tap for stoic public formulae
 `brew install sutoiku/stoic-public/<formula>`
 
 Or `brew tap sutoiku/stoic-public` and then `sutoiku/stoic-public/<formula>`.
+
+## How do I contribute ?
+https://github.com/Homebrew/brew/blob/master/docs/How-to-Create-and-Maintain-a-Tap.md
+https://github.com/Homebrew/homebrew-tex
