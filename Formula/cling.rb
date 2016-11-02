@@ -26,11 +26,11 @@ class Cling < Formula
 
     system "mkdir", "-p", "#{prefix}/include"
     system "mkdir", "-p", "#{prefix}/lib"
-    system "cp", "-r", "#{buildpath}/builddir/include/*", "#{prefix}/include/"
-    system "cp", "-r", "#{buildpath}/cling-src/tools/cling/include/*", "#{prefix}/include/"
-    system "cp", "-r", "#{buildpath}/cling-src/include/*", "#{prefix}/include/"
-    system "cp", "-r", "#{buildpath}/builddir/lib/clang", "#{prefix}/lib/"
-    system "cp", "-r", "#{buildpath}/builddir/lib/libcling.dylib", "#{prefix}/lib/"
+    system "/bin/sh", "-c", "cp -r #{buildpath}/builddir/include/* #{prefix}/include/"
+    system "/bin/sh", "-c", "cp -r #{buildpath}/cling-src/tools/cling/include/* #{prefix}/include/"
+    system "/bin/sh", "-c", "cp -r #{buildpath}/cling-src/include/* #{prefix}/include/"
+    system "/bin/sh", "-c", "cp -r #{buildpath}/builddir/lib/clang #{prefix}/lib/"
+    system "/bin/sh", "-c", "cp -r #{buildpath}/builddir/lib/libcling.dylib #{prefix}/lib/"
     system "rm", "-rf", "#{buildpath}"
   end
 
