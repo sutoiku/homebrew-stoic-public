@@ -21,7 +21,7 @@ class Cling < Formula
              "--with-cling-url=https://github.com/sutoiku/cling.git#v#{version}",
              "--no-test",
              "--skip-cleanup",
-             "--with-cmake-flags=\"-DLLVM_ENABLE_EH=ON -DLLVM_ENABLE_RTTI=ON -DLLVM_ENABLE_THREADS=OFF -DLLVM_OPTIMIZED_TABLEGEN=ON\"",
+             "--with-cmake-flags=-DLLVM_ENABLE_EH=ON -DLLVM_ENABLE_RTTI=ON -DLLVM_ENABLE_THREADS=OFF -DLLVM_OPTIMIZED_TABLEGEN=ON",
              "--with-workdir=#{buildpath}"
 
     system "mkdir", "-p", "#{prefix}/include"
