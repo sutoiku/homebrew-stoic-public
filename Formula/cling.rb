@@ -7,7 +7,7 @@ class Cling < Formula
   homepage "https://github.com/sutoiku/cling"
   version "0.3.5"
   url "https://raw.githubusercontent.com/sutoiku/cling/v#{version}/tools/packaging/cpt.py"
-  sha256 "6ae8212650c921d5acfb00246b0cbf9f50f6fd9631695356b5e3ca7bbda1dc53"
+  sha256 "d6bdeba5359b1a54a57f5e617aaa55f1c4dd94a6b5397295952919506c8ba35f"
 
   depends_on "cmake" => :build
 
