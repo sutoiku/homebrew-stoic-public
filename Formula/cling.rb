@@ -5,9 +5,15 @@
 class Cling < Formula
   desc "cling build with sutoiku patches"
   homepage "https://github.com/sutoiku/cling"
-  version "0.3.5"
-  url "https://raw.githubusercontent.com/sutoiku/cling/v#{version}/tools/packaging/cpt.py"
+  version "0.3.6"
+  url "https://raw.githubusercontent.com/root-mirror/root/master/interpreter/cling/tools/packaging/cpt.py"
   sha256 "d6bdeba5359b1a54a57f5e617aaa55f1c4dd94a6b5397295952919506c8ba35f"
+
+  bottle do
+    root_url "http://homebrew.stoic.com"
+    cellar :any
+    sha256 "1decc1680ce31e7d57a6a1de5cc8f7641682b5cbaa17f7598d1ec3a48f8b0481" => :high_sierra
+  end
 
   depends_on "cmake" => :build
 
@@ -15,7 +21,7 @@ class Cling < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
 
     system "chmod", "+x", "cpt.py"
-    system "./cpt.py", "--current-dev=branches:v#{version},,",
+    system "./cpt.py", "--current-dev=tar",
              "--with-clang-url=http://root.cern.ch/git/clang.git",
              "--with-llvm-url=http://root.cern.ch/git/llvm.git",
              "--with-cling-url=https://github.com/sutoiku/cling.git",
