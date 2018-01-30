@@ -1,15 +1,15 @@
 class Openfst < Formula
   desc "Open-source library for working with weighted finite-state transducers."
   homepage "http://www.openfst.org/"
-  url "http://www.openfst.org/twiki/pub/FST/FstDownload/openfst-1.6.3.tar.gz"
-  sha256 "5c28b6ccd017fc6ff94ebd0c73ed8ab37d48f563dab1c603856fb05bc9333d99"
+  url "http://www.openfst.org/twiki/pub/FST/FstDownload/openfst-1.6.5.tar.gz"
+  sha256 "70d9e795b9bb3eb157908a2fdde17d5d1c1be35ab21e208187a4f230291606b1"
 
   bottle do
     root_url "http://homebrew.stoic.com"
     cellar :any
-    sha256 "d5c9dca51d5e3a2fdfde26cdf8eaa2e7ae16da23b0982acc4e712247c7491011" => :high_sierra
+    sha256 "b7bf2151e68110dc4e38ecee5c50a85295cd5395d9e0dc7cf27d56a584f6832a" => :high_sierra
   end
-  
+
   needs :cxx11
 
   depends_on "zlib" unless OS.mac?

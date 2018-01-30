@@ -1,15 +1,15 @@
 class OpengrmNgram < Formula
   desc "Open-source library for constructing ngram language models, represented as weighted finite-state transducers."
   homepage "http://www.openfst.org/twiki/bin/view/GRM/NGramLibrary"
-  url "http://openfst.cs.nyu.edu/twiki/pub/GRM/NGramDownload/opengrm-ngram-1.3.2.tar.gz"
-  sha256 "f44a2115e6f3ae7de3a9af6212592b1873fa4c1c1b3d2307f51df21c6dc87ea7"
+  url "http://openfst.cs.nyu.edu/twiki/pub/GRM/NGramDownload/opengrm-ngram-1.3.3.tar.gz"
+  sha256 "387ab48e9cc0c9dbdefd3e1dcd5ec7366cfe6d7e9347e0b316a7dbc9e0016e5a"
 
   revision 2
 
   bottle do
     root_url "http://homebrew.stoic.com"
     cellar :any
-    sha256 "f38afd31ef4cfb29d4c82109511936c9c9a5d186c0c9ac3a9614b333124b89e5" => :high_sierra
+    sha256 "58298116468472a1ece7a7a3c5d3b65ceac22147acb015c59d82903979607af4" => :high_sierra
   end
 
   depends_on "openfst"
