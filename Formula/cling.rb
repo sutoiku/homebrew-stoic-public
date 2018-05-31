@@ -12,7 +12,7 @@ class Cling < Formula
   bottle do
     root_url "http://homebrew.stoic.com"
     cellar :any
-    sha256 "1decc1680ce31e7d57a6a1de5cc8f7641682b5cbaa17f7598d1ec3a48f8b0481" => :high_sierra
+    sha256 "e0480e711f758b2b594fddbd7ddef25803f846997ef527ca15fa4fc4fa5d1114" => :high_sierra
   end
 
   depends_on "cmake" => :build
