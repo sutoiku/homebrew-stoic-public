@@ -5,14 +5,15 @@
 class Cling < Formula
   desc "cling build with sutoiku patches"
   homepage "https://github.com/sutoiku/cling"
-  version "0.3.8"
+  version "0.3.9"
   url "https://raw.githubusercontent.com/root-mirror/root/master/interpreter/cling/tools/packaging/cpt.py"
   sha256 "f182fd88638154e5c69c71ee8a3abc41ddf196d1df12572342ab81e2fe3a927b"
 
   bottle do
     root_url "http://homebrew.stoic.com"
     cellar :any
-    sha256 "e0480e711f758b2b594fddbd7ddef25803f846997ef527ca15fa4fc4fa5d1114" => :high_sierra
+    # sha256 "e0480e711f758b2b594fddbd7ddef25803f846997ef527ca15fa4fc4fa5d1114" => :high_sierra
+    sha256 "a2919a67feec4d95df6957653cd94945897dbadb077f641ae9797469ac6c9c4c" => :mojave
   end
 
   depends_on "cmake" => :build
