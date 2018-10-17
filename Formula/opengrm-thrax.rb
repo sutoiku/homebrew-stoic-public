@@ -1,7 +1,7 @@
 class OpengrmThrax < Formula
   homepage "http://www.openfst.org/twiki/bin/view/GRM/Thrax"
   url "http://www.openfst.org/twiki/pub/GRM/ThraxDownload/thrax-1.2.7.tar.gz"
-  sha256 "ac7f968185d15e952d5916985dc9a00d388f3ef9180f7361fc3b745efd100aff"
+  sha256 "2fbc720fb518cc611553e9375099067166b918d8980872b943f49763f4514c00"
 
   revision 2
 
