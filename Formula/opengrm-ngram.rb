@@ -1,8 +1,8 @@
 class OpengrmNgram < Formula
   desc "Open-source library for constructing ngram language models, represented as weighted finite-state transducers."
   homepage "http://www.openfst.org/twiki/bin/view/GRM/NGramLibrary"
-  url "http://openfst.cs.nyu.edu/twiki/pub/GRM/NGramDownload/opengrm-ngram-1.3.3.tar.gz"
-  sha256 "387ab48e9cc0c9dbdefd3e1dcd5ec7366cfe6d7e9347e0b316a7dbc9e0016e5a"
+  url "http://www.openfst.org/twiki/pub/GRM/NGramDownload/opengrm-ngram-1.3.4.tar.gz"
+  sha256 "3101950b937d058ea4479cfe046aa023acef92fa96d1d8302238a8da5f66ea4d"
 
   revision 2
 
