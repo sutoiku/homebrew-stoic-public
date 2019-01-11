@@ -13,7 +13,7 @@ class Cling < Formula
     root_url "http://homebrew.stoic.com"
     cellar :any
     # sha256 "e0480e711f758b2b594fddbd7ddef25803f846997ef527ca15fa4fc4fa5d1114" => :high_sierra
-    sha256 "a2919a67feec4d95df6957653cd94945897dbadb077f641ae9797469ac6c9c4c" => :mojave
+    sha256 "08492fe0d3339d51c244d756886a0c0276467cfb652116d88457c46728c07987" => :mojave
   end
 
   depends_on "cmake" => :build
