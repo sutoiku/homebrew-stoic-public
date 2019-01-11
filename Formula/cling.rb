@@ -5,7 +5,7 @@
 class Cling < Formula
   desc "cling build with sutoiku patches"
   homepage "https://github.com/sutoiku/cling"
-  version "0.3.10"
+  version "0.3.9"
   url "https://raw.githubusercontent.com/root-mirror/root/master/interpreter/cling/tools/packaging/cpt.py"
   sha256 "f182fd88638154e5c69c71ee8a3abc41ddf196d1df12572342ab81e2fe3a927b"
 
