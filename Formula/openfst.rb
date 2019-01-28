@@ -10,8 +10,6 @@ class Openfst < Formula
     sha256 "b7bf2151e68110dc4e38ecee5c50a85295cd5395d9e0dc7cf27d56a584f6832a" => :high_sierra
   end
 
-  needs :cxx11
-
   depends_on "zlib" unless OS.mac?
 
   def install
