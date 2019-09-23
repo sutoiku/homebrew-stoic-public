@@ -16,7 +16,7 @@ Or `brew tap sutoiku/stoic-public` and then `sutoiku/stoic-public/<formula>`.
 cd /tmp
 brew install --build-bottle sutoiku/stoic-public/<formula>
 brew bottle sutoiku/stoic-public/<formula>
-aws s3 cp ./<formula>-<version>.high_sierra.bottle.1.tar.gz s3://homebrew.stoic.com/<formula>-<version>.high_sierra.bottle.tar.gz # without '.1'
+aws s3 cp ./<formula>-<version>.mojave.bottle.1.tar.gz s3://homebrew.stoic.com/<formula>-<version>.mojave.bottle.tar.gz # without '.1'
 ```
  - update formula with bottle infos
 
