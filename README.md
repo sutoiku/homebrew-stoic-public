@@ -11,7 +11,7 @@ Or `brew tap sutoiku/stoic-public` and then `sutoiku/stoic-public/<formula>`.
 ### create a bottle
 
  - required : aws cli
- - update version number of formula.rb
+ - update version number of formula.rb (local version is in /usr/local/Homebrew/Library/Taps/sutoiku/homebrew-stoic-public/Formula/)
 ```
 cd /tmp
 brew install --build-bottle sutoiku/stoic-public/<formula>
