@@ -7,13 +7,12 @@ class Cling < Formula
   homepage "https://github.com/sutoiku/cling"
   version "0.3.10"
   url "https://raw.githubusercontent.com/root-mirror/root/master/interpreter/cling/tools/packaging/cpt.py"
-  sha256 "db42e1b2cc6e1029302843b3a1124aee3b33f26d26a0772eb9c11a08fabef5a0"
+  sha256 "9c6dc72a01f123588db6a0f67bb2ba7f074cfb3a8b2039082296de2acb8e8292"
 
   bottle do
     root_url "http://homebrew.stoic.com"
     cellar :any
-    # sha256 "e0480e711f758b2b594fddbd7ddef25803f846997ef527ca15fa4fc4fa5d1114" => :high_sierra
-    sha256 "08492fe0d3339d51c244d756886a0c0276467cfb652116d88457c46728c07987" => :mojave
+    sha256 "b4fc231cbe20b31758d1cc684ed925cf458eeaf647c7c24c567ff1f815076b98" => :mojave
   end
 
   depends_on "cmake" => :build
@@ -31,7 +30,7 @@ class Cling < Formula
              "--with-cmake-flags=-DLLVM_ENABLE_EH=ON -DLLVM_ENABLE_RTTI=ON -DLLVM_ENABLE_THREADS=OFF -DLLVM_OPTIMIZED_TABLEGEN=ON",
              "--with-workdir=#{buildpath}"
     
-    system "make", "-j8", "--directory", "#{buildpath}/builddir/", "install"
+    system "make", "-j16", "--directory", "#{buildpath}/builddir/", "install"
     
     system "mkdir", "-p", "#{prefix}/include"
     system "mkdir", "-p", "#{prefix}/lib"
