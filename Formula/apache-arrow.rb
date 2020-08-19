@@ -44,6 +44,7 @@ class ApacheArrow < Formula
       -DARROW_WITH_SNAPPY=ON
       -DARROW_WITH_BROTLI=ON
       -DARROW_INSTALL_NAME_RPATH=OFF
+      -DBUILD_SHARED_LIBS=ON
       -DPYTHON_EXECUTABLE=#{Formula["python@3.8"].bin/"python3"}
     ]
 
