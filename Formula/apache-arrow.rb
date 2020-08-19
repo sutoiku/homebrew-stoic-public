@@ -8,7 +8,9 @@ class ApacheArrow < Formula
   head "https://github.com/apache/arrow.git"
 
   bottle do
+    root_url "http://homebrew.stoic.com"
     cellar :any
+    sha256 "ec1bbc55f60f459242a34f861f72a59a8a1ea3dc4a044003e03600f34968a77e" => :catalina
   end
 
   depends_on "boost" => :build
