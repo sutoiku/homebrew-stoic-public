@@ -29,9 +29,9 @@ class Cling < Formula
              "--skip-cleanup",
              "--with-cmake-flags=-DLLVM_ENABLE_EH=ON -DLLVM_ENABLE_RTTI=ON -DLLVM_ENABLE_THREADS=OFF -DLLVM_OPTIMIZED_TABLEGEN=ON",
              "--with-workdir=#{buildpath}"
-    
+
     system "make", "-j16", "--directory", "#{buildpath}/builddir/", "install"
-    
+
     system "mkdir", "-p", "#{prefix}/include"
     system "mkdir", "-p", "#{prefix}/lib"
     system "/bin/sh", "-c", "cp -r #{buildpath}/builddir/include/* #{prefix}/include/"
