@@ -1,16 +1,19 @@
 class ApacheArrow < Formula
   desc "Columnar in-memory analytics layer designed to accelerate big data"
   homepage "https://arrow.apache.org/"
-  url "https://www.apache.org/dyn/closer.lua?path=arrow/arrow-1.0.0/apache-arrow-1.0.0.tar.gz"
-  mirror "https://archive.apache.org/dist/arrow/arrow-1.0.0/apache-arrow-1.0.0.tar.gz"
-  sha256 "86ddb9feb48203a5aaf9cc4f2827525e20a2ca4d7239e492af17e74532ccf243"
+  url "https://www.apache.org/dyn/closer.lua?path=arrow/arrow-1.0.1/apache-arrow-1.0.1.tar.gz"
+  mirror "https://archive.apache.org/dist/arrow/arrow-1.0.1/apache-arrow-1.0.1.tar.gz"
+  sha256 "149ca6aa969ac5742f3b30d1f69a6931a533fd1db8b96712e60bf386a26dc75c"
   license "Apache-2.0"
   head "https://github.com/apache/arrow.git"
+
+  livecheck do
+    url :stable
+  end
 
   bottle do
     root_url "http://homebrew.stoic.com"
     cellar :any
-    sha256 "ec1bbc55f60f459242a34f861f72a59a8a1ea3dc4a044003e03600f34968a77e" => :catalina
   end
 
   depends_on "boost" => :build
