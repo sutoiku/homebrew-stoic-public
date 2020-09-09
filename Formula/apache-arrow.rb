@@ -13,7 +13,6 @@ class ApacheArrow < Formula
 
   bottle do
     root_url "http://homebrew.stoic.com"
-    sha256 "de5c767c2cb3cfb2cfa798325d23cfb6a382c727711eb7c8087a5d19134f704a" => :catalina
     cellar :any
   end
 
