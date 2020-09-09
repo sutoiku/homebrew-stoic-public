@@ -14,6 +14,8 @@ class ApacheArrow < Formula
   bottle do
     root_url "http://homebrew.stoic.com"
     cellar :any
+    rebuild 1
+    sha256 "4dbefb5d52b80cb06be25d6d77cf6ce73f770bfb6c39ae0c6fe1589d5afb05db" => :catalina
   end
 
   depends_on "aws-sdk-cpp"
