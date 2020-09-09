@@ -19,6 +19,7 @@ class ApacheArrow < Formula
   depends_on "aws-sdk-cpp"
   depends_on "boost" => :build
   depends_on "cmake" => :build
+  depends_on "c-ares"
   depends_on "brotli"
   depends_on "glog"
   depends_on "grpc"
@@ -51,6 +52,7 @@ class ApacheArrow < Formula
       -DARROW_WITH_BROTLI=ON
       -DARROW_INSTALL_NAME_RPATH=OFF
       -DBUILD_SHARED_LIBS=ON
+      -Dc-ares_FOUND=ON
       -DPYTHON_EXECUTABLE=#{Formula["python@3.8"].bin/"python3"}
     ]
 
