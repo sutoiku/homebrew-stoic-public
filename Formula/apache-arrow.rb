@@ -52,7 +52,7 @@ class ApacheArrow < Formula
       -DARROW_WITH_BROTLI=ON
       -DARROW_INSTALL_NAME_RPATH=OFF
       -DBUILD_SHARED_LIBS=ON
-      -Dc-ares_FOUND=ON
+      -DgRPC_SOURCE=BUNDLED
       -DPYTHON_EXECUTABLE=#{Formula["python@3.8"].bin/"python3"}
     ]
 
