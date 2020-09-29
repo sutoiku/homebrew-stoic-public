@@ -24,7 +24,6 @@ class ApacheArrow < Formula
   depends_on "c-ares"
   depends_on "brotli"
   depends_on "glog"
-  depends_on "grpc@1.30.2"
   depends_on "lz4"
   depends_on "numpy"
   depends_on "openssl@1.1"
