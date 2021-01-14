@@ -7,7 +7,7 @@ class Cling < Formula
   homepage "https://github.com/sutoiku/cling"
   version "0.3.11"
   url "https://raw.githubusercontent.com/root-mirror/root/master/interpreter/cling/tools/packaging/cpt.py"
-  sha256 "9c6dc72a01f123588db6a0f67bb2ba7f074cfb3a8b2039082296de2acb8e8292"
+  sha256 "ea68176e3636a816e89ad14bd348061c7e47c3f1b0c4112c8f3a73b28162ad4e"
 
   bottle do
     root_url "http://homebrew.stoic.com"
