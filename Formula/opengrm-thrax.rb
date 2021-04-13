@@ -1,4 +1,5 @@
 class OpengrmThrax < Formula
+  desc "Compiles grammars expressed as regular expressions"
   homepage "http://www.openfst.org/twiki/bin/view/GRM/Thrax"
   url "http://www.openfst.org/twiki/pub/GRM/ThraxDownload/thrax-1.2.7.tar.gz"
   sha256 "2fbc720fb518cc611553e9375099067166b918d8980872b943f49763f4514c00"
@@ -7,8 +8,7 @@ class OpengrmThrax < Formula
 
   bottle do
     root_url "http://homebrew.stoic.com"
-    cellar :any
-    sha256 "841d8a31ac8fab49b194493b8a0a7df4b130b5e315667fa15084318b0709ab27" => :high_sierra
+    sha256 cellar: :any, high_sierra: "841d8a31ac8fab49b194493b8a0a7df4b130b5e315667fa15084318b0709ab27"
   end
 
   depends_on "openfst"

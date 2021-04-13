@@ -1,5 +1,5 @@
 class OpengrmNgram < Formula
-  desc "Open-source library for constructing ngram language models, represented as weighted finite-state transducers."
+  desc "Library for constructing ngram language models, represented as weighted FST"
   homepage "http://www.openfst.org/twiki/bin/view/GRM/NGramLibrary"
   url "http://www.openfst.org/twiki/pub/GRM/NGramDownload/opengrm-ngram-1.3.4.tar.gz"
   sha256 "3101950b937d058ea4479cfe046aa023acef92fa96d1d8302238a8da5f66ea4d"
@@ -8,8 +8,7 @@ class OpengrmNgram < Formula
 
   bottle do
     root_url "http://homebrew.stoic.com"
-    cellar :any
-    sha256 "58298116468472a1ece7a7a3c5d3b65ceac22147acb015c59d82903979607af4" => :high_sierra
+    sha256 cellar: :any, high_sierra: "58298116468472a1ece7a7a3c5d3b65ceac22147acb015c59d82903979607af4"
   end
 
   depends_on "openfst"
